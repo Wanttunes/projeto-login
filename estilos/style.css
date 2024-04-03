@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+    transform: translate(-50%,-50%);
+}
+div#imagem{
+    display: block;
+    background: #5f2c82 url(../imagens/metal.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: left bottom;
+}
+div#formulario{
+    display: block;
+    padding: 10px;
+}
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#formulario > p{
+    font-size: 0.8em;
+}
+div.campo{
+    border: 2px solid #5f2c82;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #5f2c82;
+    margin: 5px 0px;
+}
+div.campo > label{
+    display: none;
+}
+div.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #5bddd9f5;
+    font-size: 1em;
+    width: calc(100% - 44.36px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+div.campo >input:focus-within{
+    background-color: white;
+    border: none;
+}
+#entrar{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #53AAA7;
+    border: none;
+    border-radius: 5px;
+}
+
+#entrar:hover{
+    background-color: #316b69;
+    cursor: pointer;
+}
+a#esqueci{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color: #316b69;
+    background-color: white;
+    border:  1px solid #53AAA7;
+    border-radius: 5px;
+    text-decoration: none;
+    padding-top: 7px;
+    margin-top: 5px;
+}
+a#esqueci:hover{
+    background-color: #53AAA7;
+    color: white;
+}
+#esqueci > span{
+    font-size: 0.8em;
+}
